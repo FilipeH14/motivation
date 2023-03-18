@@ -14,55 +14,55 @@
         android:padding="8dp">
 
         <ImageView
-            android:src="@drawable/ic_all_inclusive"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_all_inclusive" />
 
         <ImageView
-            android:src="@drawable/ic_happy"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_happy" />
 
         <ImageView
-            android:src="@drawable/ic_sunny"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sunny" />
     </LinearLayout>
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear_menu"
-        android:layout_marginTop="32dp"
         android:layout_centerHorizontal="true"
-        android:text="Olá, Kotlin"/>
+        android:layout_marginTop="32dp"
+        android:text="Olá, Kotlin" />
 
     <TextView
         android:id="@+id/text_phrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Motivation"
-        android:padding="16dp"
         android:gravity="center"
-        />
-    
+        android:padding="16dp"
+        android:text="@string/new_phrase" />
+
     <View
         android:layout_width="128dp"
         android:layout_height="5dp"
+        android:layout_below="@+id/text_phrase"
         android:layout_centerHorizontal="true"
-        android:background="@color/black"
-        android:layout_below="@+id/text_phrase"/>
-    
+        android:background="@color/black" />
+
     <Button
+        android:id="@+id/button_new_phase"
         android:layout_width="wrap_content"
-        android:text="Nova frase"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:layout_height="wrap_content"/>
+        android:text="@string/new_phrase" />
 
 </RelativeLayout>
