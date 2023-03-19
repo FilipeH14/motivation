@@ -13,11 +13,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         // Esconder bara de navegação
         supportActionBar?.hide()
+
+        handleUserName()
 
         // Eventos
         binding.buttonNewPhase.setOnClickListener(this)
@@ -27,5 +28,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if (view.id == R.id.button_new_phase) {
 
         }
+    }
+
+    private fun handleUserName() {
+        val name = SecurityPreferences(this).getString("USER_NAME")
+        binding.textUserName.text = "Olá, $name!"
     }
 }
